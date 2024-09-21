@@ -28,6 +28,7 @@ class ExcludeFileByNameFilterIterator extends \RecursiveFilterIterator {
 		'.directory', // Dolphin (KDE)
 		'.webapp', // Gentoo/Funtoo & derivatives use a tool known as webapp-config to manage web-apps.
 		'.rnd',
+		'nextcloud-init-sync.lock' // Nextcloud Docker creates this file to avoid multiple containers to access the same data at the same time
 	];
 
 	/**
